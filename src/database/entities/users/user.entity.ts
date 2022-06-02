@@ -18,12 +18,13 @@ export class User {
   @Column()
   second_lastname: string
 
-  @Column()
+  @Column({ unique: true })
   email: string
 
   @Column()
   password: string
 
+  @Column({ unique: true })
   @Column()
   username: string
 
